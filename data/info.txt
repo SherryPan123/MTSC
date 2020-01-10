@@ -1,1 +1,1 @@
-Rare-event:data/rare-event52.csv:output/compress/rare-event.binary:output/decompress/rare-event.csv:52:18398:1
+OppAnomaly:data/opprentice/opp.csv:output/compress/opp.binary:output/decompress/opp.csv:15:44607:2

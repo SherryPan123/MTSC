@@ -76,7 +76,7 @@ public class Compress {
 
             // initialize some parameters,
             double eps = metadata.getEps() * (inputData.getMax() - inputData.getMin()) / 100.0;
-            int w = 50; // maximum width of each disjoint window
+            int w = 100; // maximum width of each disjoint window
             double numerator = 0.0, denominator = 0.0; // compression ratio = numerator / denominator
             CompressRepresentationAdd compressRepresentationAdd = new CompressRepresentationAdd();
 

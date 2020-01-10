@@ -8,14 +8,14 @@ import java.io.*;
 public class CountOne {
 
     public static void main(String[] args) {
-        int win = 50;
-        combineWindow(win);
-//        separateWindow(win);
+        int win = 100;
+//        combineWindow(win);
+        separateWindow(win);
     }
 
     private static void separateWindow(int win) {
-        String inputFilename = "data/abnormal/label_win_52_90_98_50.csv";
-        String outputFilename = "data/abnormal/label_timestamp_52_90_98_50.csv";
+        String inputFilename = "data/abnormal/label_win_opp_15.csv";
+        String outputFilename = "data/abnormal/label_timestamp_opp_15.csv";
         try {
             FileWriter fw = new FileWriter(outputFilename);
             BufferedReader br = new BufferedReader(new FileReader(inputFilename));

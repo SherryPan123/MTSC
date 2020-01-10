@@ -18,12 +18,12 @@ import java.util.List;
 public class Abnormal {
 
     public static void main(String[] args) {
-        String datasetName = "Rare-event";
-        int size = 52, winSize = 368;
-        String filename = "exp/abnormal/max_percent_jac_dis.csv";
-//        String datasetName = "OppAnomaly";
-//        int size = 15, winSize = 447;
-//        String filename = "exp/abnormal/opp_max_jac_dis.csv";
+//        String datasetName = "Rare-event";
+//        int size = 52, winSize = 368;
+//        String filename = "exp/abnormal/max_percent_jac_dis.csv";
+        String datasetName = "OppAnomaly";
+        int size = 15, winSize = 447;
+        String filename = "exp/abnormal/opp_max_percent_jac_dis.csv";
 //        preprocess(size, winSize, datasetName, filename);
         double[][] maxDis = readFromFile(size, winSize, filename);
         for (int i = 0; i < winSize; i++) {
@@ -78,7 +78,7 @@ public class Abnormal {
     }
 
     private static int checkWindow(int winId, int size, double[][] maxDis) {
-        double eps1 = 0.98;
+        double eps1 = 0.85;
         double eps2 = 0.5;
         int cnt = 0;
         for (int i = 0; i < size; i++) {
@@ -102,7 +102,7 @@ public class Abnormal {
                     idInWhichGroup.add(group);
                 }
                 double[] maxDis = new double[idInWhichGroup.size()];
-                double percent = 0.9;
+                double percent = 0.95;
                 for (int i = 0; i < idInWhichGroup.size(); i++) {
                     maxDis[i] = getTopPercent(percent, idInWhichGroup, i);
                     //System.out.print(maxDis[i] + " ");
