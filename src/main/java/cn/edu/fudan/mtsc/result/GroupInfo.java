@@ -30,4 +30,7 @@ public class GroupInfo implements Serializable {
         return signalIdAndOffsets;
     }
 
+    public GroupResultItem getGroupResultItem() {
+        return groupResultItem;
+    }
 }

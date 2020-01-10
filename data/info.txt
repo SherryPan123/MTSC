@@ -1,3 +1,1 @@
-Gas:data/uci_gas/gas.csv:output/compress/gas.binary:output/decompress/gas.csv:100:3600:2
-Climate-100:data/climate/climate-100.csv:output/compress/climate-100.binary:output/decompress/climate-100.csv:100:2000:2
-Climate-200:data/climate/climate-200.csv:output/compress/climate-200.binary:output/decompress/climate-200.csv:200:2000:2
+Rare-event:data/rare-event52.csv:output/compress/rare-event.binary:output/decompress/rare-event.csv:52:18398:1
